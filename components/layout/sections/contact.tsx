@@ -38,7 +38,7 @@ export const ContactSection = () => {
       firstName: '',
       lastName: '',
       email: '',
-      subject: 'Web Development',
+      subject: '',
       message: '',
     },
   });
@@ -47,7 +47,7 @@ export const ContactSection = () => {
     const { firstName, lastName, email, subject, message } = values;
     console.log(values);
 
-    const mailToLink = `mailto:leomirandadev@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
+    const mailToLink = `mailto:meterelectrical@gmail.com?subject=${subject}&body=Hello I am ${firstName} ${lastName}, my Email is ${email}. %0D%0A${message}`;
 
     window.location.href = mailToLink;
   }
@@ -62,7 +62,7 @@ export const ContactSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold">Get in Touch</h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Feel free to get in touch through the options listed below. We're committed to providing
+            Feel free to get in touch through the options listed. We're committed to providing
             excellent service and will respond as quickly as possible.
           </p>
 
@@ -73,7 +73,7 @@ export const ContactSection = () => {
                 <div className="font-bold">Address</div>
               </div>
 
-              <div>15011 29th Ave W, Lynnwood, WA 98087</div>
+              <div>15011 29th Ave, Lynnwood, WA 98087</div>
             </div>
 
             <div>
@@ -82,13 +82,13 @@ export const ContactSection = () => {
                 <div className="font-bold">Call us</div>
               </div>
 
-              <div>+1 (425) 459-0089</div>
+              <div>+1 (425) 588-7578</div>
             </div>
 
             <div>
               <div className="flex gap-2 mb-1">
                 <Mail />
-                <div className="font-bold">Email US</div>
+                <div className="font-bold">Email us</div>
               </div>
 
               <div>meterelectrical@gmail.com</div>
@@ -172,10 +172,10 @@ export const ContactSection = () => {
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="Web Development">Commercial</SelectItem>
-                            <SelectItem value="Mobile Development">Residential</SelectItem>
-                            <SelectItem value="Figma Design">Industrial</SelectItem>
-                            <SelectItem value="REST API">Other</SelectItem>
+                            <SelectItem value="Commercial">Commercial</SelectItem>
+                            <SelectItem value="Residential">Residential</SelectItem>
+                            <SelectItem value="Industrial">Industrial</SelectItem>
+                            <SelectItem value="Other">Other</SelectItem>
                           </SelectContent>
                         </Select>
                         <FormMessage />

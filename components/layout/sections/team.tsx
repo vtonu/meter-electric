@@ -21,7 +21,7 @@ export const TeamSection = () => {
       imageUrl: 'https://i.postimg.cc/6q8tXjzB/profilepic.png',
       firstName: 'Igor',
       lastName: 'Tonu',
-      positions: ['Owner', 'CEO'],
+      positions: ['Owner'],
       socialNetworks: [
         {
           name: 'LinkedIn',
@@ -86,7 +86,7 @@ export const TeamSection = () => {
       <div className="text-center mb-8">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">Our Team</h2>
 
-        <h2 className="text-3xl md:text-4xl text-center font-bold">Company Team</h2>
+        <h2 className="text-3xl md:text-4xl text-center font-bold">Company Leadership</h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">

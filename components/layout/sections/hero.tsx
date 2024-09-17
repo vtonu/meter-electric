@@ -20,7 +20,7 @@ export const HeroSection = () => {
             <span> Design is out now! </span>
           </Badge> */}
 
-          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
+          <div className="max-w-screen-md mx-auto text-center text-4xl md:text-7xl font-bold">
             {/* <h1 className="font-bold">
               METER
               <span className="px-2 red-600">ELECTRIC</span>

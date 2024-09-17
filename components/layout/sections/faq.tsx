@@ -13,26 +13,26 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: 'Do you offer free estimates?',
-    answer: 'Yes, we offer free estimates! Contact us.',
+    question: 'Do you offer FREE estimates?',
+    answer: 'Yes, we offer free estimates! Contact us for any inquiries.',
     value: 'item-1',
   },
   {
     question: 'What services do you offer?',
     answer:
-      'We offer a wide range of electrical services including residential, commercial and industrial wiring, lighting installations, electrical repairs, panel upgrades, and more. For a full list of services, please see our Services page.',
+      'We offer a wide range of electrical services including residential, commercial and industrial wiring, lighting installations, electrical repairs, panel upgrades, and more. For a full list of services, please see our Services page above.',
     value: 'item-2',
   },
   {
     question: 'Are you licensed and insured?',
     answer:
-      'Yes, we are fully licensed and insured. Our team adheres to all local and national electrical codes and standards to ensure the highest quality of work and safety.',
+      'Yes, we are fully licensed, bonded and insured. Our team adheres to all local and national electrical codes and standards to ensure the highest quality of work and safety.',
     value: 'item-3',
   },
   {
-    question: 'How long will my project take?',
+    question: 'How long will my project or estimate take?',
     answer:
-      'The duration of your project depends on its complexity and scope. We will provide you with an estimated timeline when we discuss your project.',
+      'The duration of your project and/or estimate depends on its complexity and scope. We will provide you with an estimated timeline when we discuss the project directly.',
     value: 'item-4',
   },
 ];

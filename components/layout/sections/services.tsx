@@ -43,8 +43,8 @@ export const ServicesSection = () => {
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">Our Services</h2>
 
       <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">What We Offer</h2>
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        At Meter Electric, we provide expert electrical solutions for commercial, residential, and
+      <h3 className="md:w-1/2 mx-auto text-md text-center text-muted-foreground mb-8">
+        At METER ELECTRIC, we provide expert electrical solutions for commercial, residential, and
         industrial needs. From automation and control systems to EV charger installations and
         emergency generators, we tailor our services to ensure efficiency and reliability for every
         project.

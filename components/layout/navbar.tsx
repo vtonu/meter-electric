@@ -21,7 +21,10 @@ import {
 import { Button } from '../ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
+import logoBlack from '@/public/logo-black.png';
+import logoWhite from '@/public/logo-white.png';
 import { ToggleTheme } from './toogle-theme';
+import { useTheme } from 'next-themes';
 
 interface RouteProps {
   href: string;
@@ -71,12 +74,18 @@ const featureList: FeatureProps[] = [
 ];
 
 export const Navbar = () => {
+  const { theme } = useTheme();
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <header className="shadow-inner bg-opacity-15 w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-card">
       <Link href="/" className="font-bold text-lg flex items-center">
-        <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-        Meter Electric
+        {/* <Image src={logoBlack} alt="Official Logo" width={350} height={350} /> */}
+        <Image
+          width={350}
+          height={350}
+          src={theme === 'light' ? logoBlack : logoWhite}
+          alt="official logo"
+        />
       </Link>
       {/* <!-- Mobile --> */}
       <div className="flex items-center lg:hidden">
@@ -129,12 +138,13 @@ export const Navbar = () => {
             <NavigationMenuContent>
               <div className="grid w-[600px] grid-cols-2 gap-5 p-4">
                 <Image
-                  src="/hero-image-light.jpeg"
-                  alt="RadixLogo"
+                  src="/services-small.jpg"
+                  alt="Logo"
                   className="h-full w-full rounded-md object-cover"
                   width={600}
                   height={600}
                 />
+
                 <ul className="flex flex-col gap-2">
                   {featureList.map(({ title, description }) => (
                     <li key={title} className="rounded-md p-3 text-sm hover:bg-muted">
