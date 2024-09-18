@@ -63,7 +63,7 @@ export const ContactSection = () => {
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
             Feel free to get in touch through the options listed. We're committed to providing
-            excellent service and will respond as quickly as possible.
+            excellent service and will respond as quickly as possible!
           </p>
 
           <div className="flex flex-col gap-4">

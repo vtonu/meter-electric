@@ -20,26 +20,33 @@ interface ReviewProps {
 const reviewList: ReviewProps[] = [
   {
     image: 'https://github.com/shadcn.png',
-    name: 'Project #1',
+    name: 'Project Name Here',
     userName: 'Commercial',
     comment: 'Upgraded meter service and panel replacement.',
   },
   {
     image: 'https://github.com/shadcn.png',
-    name: 'Project #2',
+    name: 'Project Name Here',
     userName: 'Residential',
     comment: 'Installed EV charger and emergency generator for residential property.',
   },
 
   {
     image: 'https://github.com/shadcn.png',
-    name: 'Project #3',
-    userName: 'Residential',
+    name: 'Project Name Here',
+    userName: 'Industrial',
     comment: 'Installed EV charger and emergency generator for residential property.',
   },
   {
     image: 'https://github.com/shadcn.png',
-    name: 'Project #4',
+    name: 'Project Name Here',
+    userName: 'Residential',
+    comment:
+      'Changed out a 200 amp panel and installed a 400 amp panel for a residential property.',
+  },
+  {
+    image: 'https://github.com/shadcn.png',
+    name: 'Project Name Here',
     userName: 'Residential',
     comment:
       'Changed out a 200 amp panel and installed a 400 amp panel for a residential property.',
@@ -49,7 +56,7 @@ const reviewList: ReviewProps[] = [
 export const TestimonialSection = () => {
   return (
     <section id="testimonials" className="container py-24 sm:py-32">
-      <div className="text-center mb-8">
+      <div className="text-center mb-12">
         <h2 className="text-lg text-primary text-center mb-2 tracking-wider">Our Projects</h2>
         <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
           See What Our Company Does
