@@ -9,7 +9,7 @@ import { useTheme } from 'next-themes'; */
 export const FooterSection = () => {
   /* const { theme } = useTheme(); */
   return (
-    <footer id="footer" className="container py-24 sm:py-32 ">
+    <footer id="footer" className="container py-24 sm:py-12 ">
       <div className="p-12 bg-card border border-secondary rounded-2xl ">
         <section className="flex justify-center items-center">
           <Link href="#" className="flex font-bold items-center">

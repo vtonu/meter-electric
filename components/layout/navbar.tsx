@@ -1,5 +1,5 @@
 'use client';
-import { ChevronsDown, Github, Menu } from 'lucide-react';
+import { ChevronsDown, Menu } from 'lucide-react';
 import React from 'react';
 import {
   Sheet,
@@ -99,12 +99,12 @@ export const Navbar = () => {
             className="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card border-secondary">
             <div>
               <SheetHeader className="mb-4 ml-4">
-                <SheetTitle className="flex items-center">
-                  <Link href="/" className="flex items-center">
-                    <ChevronsDown className="bg-gradient-to-tr border-secondary from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white" />
-                    METER ELECTRIC
-                  </Link>
-                </SheetTitle>
+                <Image
+                  width={350}
+                  height={350}
+                  src={theme === 'light' ? logoBlack : logoWhite}
+                  alt="official logo"
+                />
               </SheetHeader>
 
               <div className="flex flex-col gap-2">

@@ -9,9 +9,11 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 import { Star } from 'lucide-react';
+import Image, { StaticImageData } from 'next/image';
+import project1Yellow from '@/public/ourProjects/project1_yellow.jpg';
 
 interface ReviewProps {
-  image: string;
+  image: StaticImageData;
   name: string;
   userName: string;
   comment: string;
@@ -19,33 +21,33 @@ interface ReviewProps {
 
 const reviewList: ReviewProps[] = [
   {
-    image: 'https://github.com/shadcn.png',
+    image: project1Yellow,
     name: 'Project Name Here',
     userName: 'Commercial',
     comment: 'Upgraded meter service and panel replacement.',
   },
   {
-    image: 'https://github.com/shadcn.png',
+    image: project1Yellow,
     name: 'Project Name Here',
     userName: 'Residential',
     comment: 'Installed EV charger and emergency generator for residential property.',
   },
 
   {
-    image: 'https://github.com/shadcn.png',
+    image: project1Yellow,
     name: 'Project Name Here',
     userName: 'Industrial',
     comment: 'Installed EV charger and emergency generator for residential property.',
   },
   {
-    image: 'https://github.com/shadcn.png',
+    image: project1Yellow,
     name: 'Project Name Here',
     userName: 'Residential',
     comment:
       'Changed out a 200 amp panel and installed a 400 amp panel for a residential property.',
   },
   {
-    image: 'https://github.com/shadcn.png',
+    image: project1Yellow,
     name: 'Project Name Here',
     userName: 'Residential',
     comment:
@@ -72,31 +74,15 @@ export const TestimonialSection = () => {
           {reviewList.map((review) => (
             <CarouselItem key={review.name} className="md:basis-1/2 lg:basis-1/3">
               <Card className="bg-muted/50 dark:bg-card">
-                <CardContent className="pt-6 pb-0">
-                  {/* <div className="flex gap-1 pb-6">
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                    <Star className="size-4 fill-primary text-primary" />
-                  </div> */}
-                  {`"${review.comment}"`}
-                </CardContent>
+                <CardContent className="pt-6 pb-0">{`"${review.comment}"`}</CardContent>
 
                 <CardHeader>
                   <div className="flex flex-row items-center gap-4">
-                    {/*  <Avatar>
-                      <AvatarImage
-                        src="https://avatars.githubusercontent.com/u/75042455?v=4"
-                        alt="radix"
-                      />
-                      <AvatarFallback>SV</AvatarFallback>
-                    </Avatar> */}
-
                     <div className="flex flex-col">
                       <CardTitle className="text-lg">{review.name}</CardTitle>
                       <CardDescription>{review.userName}</CardDescription>
                     </div>
+                    <Image src={project1Yellow} alt="Generac Logo" className="h-16 w-auto" />
                   </div>
                 </CardHeader>
               </Card>

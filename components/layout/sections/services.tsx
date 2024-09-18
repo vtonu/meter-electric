@@ -48,7 +48,7 @@ export const ServicesSection = () => {
       </h3>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full lg:w-[60%] mx-auto">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full lg:w-[70%] mx-auto text-center">
         {serviceList.map(({ title, description, pro }) => (
           <Card key={title} className="bg-muted/60 dark:bg-card h-full relative">
             <CardHeader>

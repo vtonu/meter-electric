@@ -1,52 +1,36 @@
 'use client';
 
-import { Icon } from '@/components/ui/icon';
+import Image from 'next/image';
 import { Marquee } from '@devnomic/marquee';
 import '@devnomic/marquee/dist/index.css';
-import { icons } from 'lucide-react';
-interface sponsorsProps {
-  icon: string;
-  name: string;
-}
+import generacLogo from '/public/generac-logo.jpg';
+import { Card } from '@/components/ui/card';
 
-const sponsors: sponsorsProps[] = [
+const sponsors = [
   {
-    icon: 'Ghost',
-    name: 'GENERAC',
+    image: generacLogo,
   },
   {
-    icon: 'Ghost',
-    name: 'GENERAC',
+    image: generacLogo,
   },
   {
-    icon: 'Ghost',
-    name: 'GENERAC',
-  },
-  {
-    icon: 'Ghost',
-    name: 'GENERAC',
-  },
-  {
-    icon: 'Ghost',
-    name: 'GENERAC',
+    image: generacLogo,
   },
 ];
 
 export const SponsorsSection = () => {
   return (
     <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
-      <h2 className="text-lg md:text-xl text-center mb-6 ">Our Partners</h2>
-
-      <div className="mx-auto">
-        <Marquee className="gap-[3rem]" fade innerClassName="gap-[3rem]" pauseOnHover>
-          {sponsors.map(({ icon, name }) => (
-            <div key={name} className="flex items-center text-xl md:text-2xl font-medium">
-              <Icon name={icon as keyof typeof icons} size={32} color="white" className="mr-2" />
-              {name}
-            </div>
+      <h2 className="text-lg md:text-xl text-center pb-4">Our Partners</h2>
+      <Marquee>
+        <div className="flex justify-center items-center space-x-4">
+          {sponsors.map((sponsor, index) => (
+            <Card key={index} className="p-4 bg-zinc-900 text-white">
+              <Image src={sponsor.image} alt="Generac Logo" className="h-16 w-auto" />
+            </Card>
           ))}
-        </Marquee>
-      </div>
+        </div>
+      </Marquee>
     </section>
   );
 };
