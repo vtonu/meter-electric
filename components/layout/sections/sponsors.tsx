@@ -16,12 +16,18 @@ const sponsors = [
   {
     image: generacLogo,
   },
+  {
+    image: generacLogo,
+  },
+  {
+    image: generacLogo,
+  },
 ];
 
 export const SponsorsSection = () => {
   return (
     <section id="sponsors" className="max-w-[75%] mx-auto pb-24 sm:pb-32">
-      <h2 className="text-lg md:text-xl text-center pb-4">Our Partners</h2>
+      <h2 className="text-lg md:text-xl text-center pb-4 font-bold">Our Partners</h2>
       <Marquee>
         <div className="flex justify-center items-center space-x-4">
           {sponsors.map((sponsor, index) => (
