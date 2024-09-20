@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Building2, Clock, Mail, Phone } from 'lucide-react';
