@@ -8,9 +8,16 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from '@/components/ui/carousel';
-import { Star } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image';
 import project1Yellow from '@/public/ourProjects/project1_yellow.jpg';
+import project2 from '@/public/ourProjects/project2_redbluewires.jpg';
+import project3 from '@/public/ourProjects/project3_yellowstickers.jpg';
+import project4 from '@/public/ourProjects/project4_housebackground.jpg';
+import project5 from '@/public/ourProjects/project5_EVcharger.jpg';
+import project6 from '@/public/ourProjects/project6_GENERAC.jpg';
+import project7 from '@/public/ourProjects/project6_GENERAC2.jpg';
+import project8 from '@/public/ourProjects/project6_panel.jpg';
+import project9 from '@/public/ourProjects/project7.jpg';
 
 interface ReviewProps {
   image: StaticImageData;
@@ -27,31 +34,52 @@ const reviewList: ReviewProps[] = [
     comment: 'Upgraded meter service and panel replacement.',
   },
   {
-    image: project1Yellow,
+    image: project2,
     name: 'Project Name Here',
     userName: 'Residential',
-    comment: 'Installed EV charger and emergency generator for residential property.',
+    comment: 'Upgraded meter service and panel replacement.',
   },
-
   {
-    image: project1Yellow,
+    image: project3,
+    name: 'Project Name Here',
+    userName: 'Residential',
+    comment: 'Installed new service panel for residential property.',
+  },
+  {
+    image: project4,
+    name: 'Project Name Here',
+    userName: 'Residential',
+    comment: 'Installed new service panel for residential property.',
+  },
+  {
+    image: project5,
+    name: 'Project Name Here',
+    userName: 'Residential',
+    comment: 'Installed EV charger for residential property.',
+  },
+  {
+    image: project6,
     name: 'Project Name Here',
     userName: 'Industrial',
-    comment: 'Installed EV charger and emergency generator for residential property.',
+    comment: 'Upgraded to GENERAC Emergency Backup Generator.',
   },
   {
-    image: project1Yellow,
+    image: project7,
     name: 'Project Name Here',
-    userName: 'Residential',
-    comment:
-      'Changed out a 200 amp panel and installed a 400 amp panel for a residential property.',
+    userName: 'Commercial',
+    comment: 'Installed GENERAC Backup Generator.',
   },
   {
-    image: project1Yellow,
+    image: project8,
     name: 'Project Name Here',
     userName: 'Residential',
-    comment:
-      'Changed out a 200 amp panel and installed a 400 amp panel for a residential property.',
+    comment: 'Installed a new panel for residential property.',
+  },
+  {
+    image: project9,
+    name: 'Project Name Here',
+    userName: 'Residential',
+    comment: 'Installed AC unit.',
   },
 ];
 
@@ -72,18 +100,15 @@ export const TestimonialSection = () => {
         className="relative w-[80%] sm:w-[90%] lg:max-w-screen-xl mx-auto">
         <CarouselContent>
           {reviewList.map((review) => (
-            <CarouselItem key={review.name} className="md:basis-1/2 lg:basis-1/3">
-              <Card className="bg-muted/50 dark:bg-card">
-                <CardContent className="pt-6 pb-0">{`"${review.comment}"`}</CardContent>
-
+            <CarouselItem key={review.name} className="md:basis-1/2 lg:basis-1/3 ">
+              <Card className="bg-muted/50 dark:bg-card ">
                 <CardHeader>
-                  <div className="flex flex-row items-center gap-4">
-                    <div className="flex flex-col">
-                      <CardTitle className="text-lg">{review.name}</CardTitle>
-                      <CardDescription>{review.userName}</CardDescription>
-                    </div>
-                    <Image src={project1Yellow} alt="Generac Logo" className="h-16 w-auto" />
+                  <div>
+                    <CardTitle className="text-lg">{review.name}</CardTitle>
+                    <CardDescription>{review.userName}</CardDescription>
                   </div>
+                  <Image src={review.image} alt={`${review.name} Logo`} />
+                  <CardContent className="pt-4">{`"${review.comment}"`}</CardContent>
                 </CardHeader>
               </Card>
             </CarouselItem>
