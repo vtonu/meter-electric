@@ -2,6 +2,7 @@ import { Separator } from '@/components/ui/separator';
 import Link from 'next/link';
 import Image from 'next/image';
 import logoBlack from '@/public/logo-black.png';
+import { Analytics } from '@vercel/analytics/react';
 
 export const FooterSection = () => {
   return (
@@ -13,6 +14,7 @@ export const FooterSection = () => {
           </Link>
         </section>
         <Separator className="my-6" />
+        <Analytics />
         <section className="text-center">
           <h3 className="">Copyright &copy; 2024 Meter Electric LLC.</h3>
         </section>
