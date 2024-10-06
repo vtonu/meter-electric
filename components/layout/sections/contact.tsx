@@ -63,18 +63,17 @@ export const ContactSection = () => {
             <h2 className="text-3xl md:text-4xl font-bold">Get in Touch</h2>
           </div>
           <p className="mb-8 text-muted-foreground lg:w-5/6">
-            Feel free to get in touch through the options listed. We're committed to providing
-            excellent service and will respond as quickly as possible!
+            We're committed to providing excellent service and will respond as quickly as possible!
           </p>
 
           <div className="flex flex-col gap-4">
             <div>
               <div className="flex gap-2 mb-1">
                 <Building2 />
-                <div className="font-bold">Address</div>
+                <div className="font-bold">Location</div>
               </div>
 
-              <div>15011 29th Ave, Lynnwood, WA 98087</div>
+              <div>Lynnwood, WA, USA</div>
             </div>
 
             <div>
